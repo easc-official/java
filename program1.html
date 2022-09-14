@@ -5,92 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program 2</title>
-    <style>
-        body{
-            background-color: black;
-            color: aliceblue;
-            padding: 0;
-            margin: 0;
-            min-height: 50px;
-
-
-        } 
-         pre 
-        {
-            padding-left: 20px;
-            font-size: 16px;
-            margin-bottom: 0px;
-            background-color:rgba(113, 114, 114, 0.39);
-            padding-bottom: 10px;
-            padding-top: 13px;
-            display: inline-block;
-
-      
-        }
-        .save
-        {
-            text-align: center;
-            font-family:Arial, Helvetica, sans-serif;
-margin-bottom: 30px;       
-}
-
-b{
-    padding-top: 20px;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-footer{
-    margin-top: 80px;
-    height: 0;
-    margin-bottom: 0;
-}
-span{
-    color: red;
-}
-</style>
+    <link rel="stylesheet" href="./programstyle.css">
 </head>
 <body>
-    <h2 class="save">Number <span>Triangle</span></h2>
-        <pre>
+    <div class="header-container">
+        <h2 class="opening header"><span class="upper">N</span>umber &nbsp; &nbsp;<span class="highlighted"><span class="upper">T</span>riangle</span></h2>
+    </div>
+    <div class="code-snippet-container">
+       <div class="code">
+         <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="program-name">triangle.java</pre>
+            </div>
+         </div>  
+        <div class="snippet-container">
+        <pre class="code-snippet">
 import java.util.*;
 class triangle
 {
 public static void main(String args[]) {
 
 Scanner scan=new Scanner(System.in); //to get the unput from standard input
-            
+        
 System.out.print(" How Many Lines You Want Print in one Triangle ? : ");
-            
+        
 int count=scan.nextInt();  
-            
+        
 for (int i =1;i<=count;i++)
 {
- for(int j=1;j<=i;j++){
+for(int j=1;j<=i;j++){
 
- System.out.print(" "+j);}
+System.out.print(" "+j);}
 
 System.out.println();} //end of for loop
-} } </pre><br>
-    
-<br>
-<b>Output:</b>
-<br>
-<pre>
+} } </pre>
+       </div>
+    </div>
+        <div class="code-result">
+            <div class="look">
+                <div class="uiBtns">
+                    <div class="red btn"></div>
+                    <div class="orange btn"></div>
+                    <div class="green btn"></div>
+                </div>
+                <div class="window-header">
+                    <pre class="output">Output</pre>
+                </div>
+             </div>
+        <div class="snippet-container">
+       <pre class="code-snippet">
 1. ❯ javac triangle.java
 
 2. ❯ java triangle
 
- How Many Lines You Want Print in one Triangle ?: 5
- 1
- 1 2
- 1 2 3
- 1 2 3 4
- 1 2 3 4 5
-</pre>
- <h3 class="save">  Save as <span style="color: red;">triangle.java</span></h3>  
- <hr>
-    <footer align="center"> &copy; EASC-OFFICIAL</footer>
+How Many Lines You Want Print in one Triangle ?: 5
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+            </pre>
+        </div>
+        </div>       
+    </div>
+    <div class="footer-container">
+        <footer> &copy; EASC-OFFICIAL</footer>
+    </div>
 </body>
 </html>
