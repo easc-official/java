@@ -1,6 +1,6 @@
 <h1 align="center">Java Programming</h1>
 
-<p align="center">An online record of Java Programs for **II-Year Bsc.Computer Science Students**<br>
+<p align="center">An online record of Java Programs for <b>II-Year Bsc.Computer Science Students</b><br>
 Built using HTML5, CSS3 and JS.</p>
 
 <br>
