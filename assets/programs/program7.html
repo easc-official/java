@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <link rel="stylesheet" href="../css/fonts-imported.css">
+    <link rel="stylesheet" href="../css/programstyle.css">
+    <link rel="shortcut icon" href="../icons/icons8-source-code-64.png" type="image/x-icon">
+</head>
+<body class="slide-out-right">
+    <div class="header-container">
+        <h2 class="opening header"><span class="upper">M</span>oving &nbsp; &nbsp;<span class="highlighted"><span class="upper">B</span>alls</span></h2>
+    </div>
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+  </label>
+  <div class="background">&nbsp;</div>
+  <nav class="nav">
+    <ul class="list">
+      <li class="item"> <a class="link" id="exit"  href="../../index.html"><span class="upper2">H</span>ome</a></li>
+      <li class="item"> <a class="link" id="about" href="../about/about.html">&nbsp;<span class="upper2">A</span>bout</a> </li>
+    </ul>
+  </nav>
+  
+    <div class="code-snippet-container">
+       <div class="code">
+         <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="program-name">balls.java</pre>
+            </div>
+         </div>  
+        <div class="snippet-container">
+        <pre class="code-snippet">
+import java.io.*;
+import java.awt.*;
+import java.applet.*;
+public class balls extends Applet implements Runnable 
+{   
+  int i,j,k,jj;
+  Thread thread;
+  public void start(){
+  thread =new Thread(this);
+  thread.start(); }
+  public void run()
+  {
+    while(true){
+    for(k=50;i&#60size().width;k+=10)
+  {
+  repaint();
+  try{
+    thread.sleep(200);
+  }catch(InterruptedException e){}
+  }}}
+  public void stop(){
+    thread.stop();
+   }
+  public void paint(Graphics g)
+  { 
+    i=k+100;
+    j=k+100;
+    g.setColor(Color.red);
+    g.fillOval(i,175,80,80);
+    g.setColor(Color.blue);
+    g.fillOval(i,j+80,80,80);
+    jj=k+100;
+    g.setColor(Color.yellow);
+    g.fillOval(i,j+180,80,80); 
+   }
+}</pre>
+       </div>
+    </div>
+        <div class="code-result">
+            <div class="look">
+                <div class="uiBtns">
+                    <div class="red btn"></div>
+                    <div class="orange btn"></div>
+                    <div class="green btn"></div>
+                </div>
+                <div class="window-header">
+                    <pre class="output">balls.html</pre>
+                </div>
+             </div>
+        <div class="snippet-container">
+       <pre class="code-snippet">
+&lt;html>
+  &lt;applet code=”balls.class” width="600" height="600">  
+  &lt;/applet>
+&lt;/html>
+</pre>
+        </div>
+        </div>
+        <div class="code-result">
+          <div class="look">
+              <div class="uiBtns">
+                  <div class="red btn"></div>
+                  <div class="orange btn"></div>
+                  <div class="green btn"></div>
+              </div>
+              <div class="window-header">
+                  <pre class="output">Terminal</pre>
+              </div>
+           </div>
+      <div class="snippet-container">
+     <pre class="code-snippet">
+❯ c:\jdk1.3\bin>javac balls.java
+
+❯ c:\jdk1.3\bin>appletviewer.exe balls.html  
+  </pre>
+      </div>
+      </div> 
+      <div class="code-result image">
+        <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="output">Applet Viewer</pre>
+            </div>
+         </div>
+    <div class="snippet-container">
+   <pre class="code-snippet">
+<img class="output-img" src="../images/image.WTLOS1.png" alt="">
+</pre>
+    </div>
+    </div>         
+    </div>
+    <div class="footer-container">
+        <footer> &copy; EASC-unofficial</footer>
+    </div>
+</body>
+</html>

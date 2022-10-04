@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 9</title>
+    <link rel="stylesheet" href="../css/fonts-imported.css">
+    <link rel="stylesheet" href="../css/programstyle.css">
+    <link rel="shortcut icon" href="../icons/icons8-source-code-64.png" type="image/x-icon">
+</head>
+<body class="slide-out-right">
+    <div class="header-container">
+        <h2 class="opening header"><span class="upper">M</span>ulti &nbsp; &nbsp;<span class="highlighted"><span class="upper">T</span>hreading</span></h2>
+    </div>
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+  </label>
+  <div class="background">&nbsp;</div>
+  <nav class="nav">
+    <ul class="list">
+      <li class="item"> <a class="link" id="exit"  href="../../index.html"><span class="upper2">H</span>ome</a></li>
+      <li class="item"> <a class="link" id="about" href="../about/about.html">&nbsp;<span class="upper2">A</span>bout</a> </li>
+    </ul>
+  </nav>
+  
+    <div class="code-snippet-container">
+       <div class="code">
+         <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="program-name">threadMain.java</pre>
+            </div>
+         </div>  
+        <div class="snippet-container">
+        <pre class="code-snippet">
+class threada extends Thread{
+  public void run(){
+    for(int i=1;i<=5;i++){
+      System.out.println("From thread A="+i);}
+      System.out.println("exist from thread A");
+    }
+  }
+  
+    class threadb extends Thread{
+      public void run(){
+        for(int j=1;j<=5;j++){
+          System.out.println("From thread B = : "+j);
+          if(j==3)
+          stop();
+        }
+        System.out.println("Exist from Thread B");
+      }
+  
+        class threadc extends Thread{
+          public void run(){
+            for(int k=1;k<=5;k++){
+              System.out.println("From Thread c="+k);
+              if(k==1){
+                try{
+                  sleep(1000);
+                }catch(Exception e){
+                  System.out.println("Exit from Thread C"); 
+                }
+          }
+        } 
+    }
+}
+
+public class threadMain {
+  public static void main(String[] args) {
+  
+      Thread a=new threadA();
+      Thread b=new threadB();
+      Thread c=new threadC();
+      
+      System.out.println("Thread will Start A");
+      a.start();
+      System.out.println("Thread will Start B");
+      b.start();
+      System.out.println("Thread will Start C");
+      c.start();
+      System.out.println("End of All Thread "); 
+  }
+} </pre>
+       </div>
+    </div>
+        <div class="code-result">
+            <div class="look">
+                <div class="uiBtns">
+                    <div class="red btn"></div>
+                    <div class="orange btn"></div>
+                    <div class="green btn"></div>
+                </div>
+                <div class="window-header">
+                    <pre class="output">Output</pre>
+                </div>
+             </div>
+        <div class="snippet-container">
+       <pre class="code-snippet">
+1. ❯ javac threadMain.java
+
+2. ❯ java threadMain
+
+  thread will strat A
+  thread will start B
+  From thread A=1
+  thread will start C
+  from thread B=1
+  From thread A=2
+  end of all thread
+  from thread c=1
+  from thread B=2
+  From thread A=3
+  from thread B=3
+  From thread A=4
+  From thread A=5
+  exist from thread A
+  from thread c=2
+  from thread c=3
+  from thread c=4
+  from thread c=5
+  exit from thread C
+            </pre>
+        </div>
+        </div>       
+    </div>
+    <div class="footer-container">
+        <footer> &copy; EASC-unofficial</footer>
+    </div>
+</body>
+</html>
