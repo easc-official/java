@@ -1,12 +1,12 @@
-# **Java Programming**
+<h1 align="center">Java Programming</h1>
 
-An online record of Java Programs for **II-Year Bsc.Computer Science Students**<br>
-Built using HTML5, CSS3 and JS.
+<p align="center">An online record of Java Programs for **II-Year Bsc.Computer Science Students**<br>
+Built using HTML5, CSS3 and JS.</p>
 
 <br>
 
 ## **TRY NOW..!** <br>
-▶ **[Web Application :](https://easc-unofficial.github.io/Java-Programming/ "Website Demo Link")**
+▶ **[Web Application :](https://easc-unofficial.github.io/java/ "Website Demo Link")**
  - A Web Applicaton developed to **load our Website from Webserver**
  - Completely Online
  - Try it by clicking the above heading
