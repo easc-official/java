@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <link rel="stylesheet" href="../css/fonts-imported.css">
+    <link rel="stylesheet" href="../css/programstyle.css">
+    <link rel="shortcut icon" href="../icons/icons8-source-code-64.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header-container">
+        <h2 class="opening header"><span class="upper">W</span>ords &nbsp; &nbsp;<span class="highlighted"><span class="upper">C</span>ounter</span></h2>
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+    <label for="navi-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+    </label>
+    <div class="background">&nbsp;</div>
+    <nav class="nav">
+        <ul class="list">
+            <li class="item"> <a class="link" id="exit"  href="../../index.html"><span class="upper2">H</span>ome</a></li>
+            <li class="item"> <a class="link" id="about" href="../about/about.html">&nbsp;<span class="upper2">A</span>bout</a> </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="code-snippet-container">
+       <div class="code">
+         <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="program-name">wordsCounter.java</pre>
+            </div>
+         </div>  
+        <div class="snippet-container">
+        <pre class="code-snippet"><code>
+import java.util.*;
+ public class wordsCounter {
+    public static void main(String[] args) {
+    int count=1;
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter the Sentence : ");
+
+    String sentence=sc.nextLine();
+
+    for(int i=0;i&#60sentence.length()-1;i++){
+        if((sentence.charAt(i)) ==' ' && (sentence.charAt(i+1) !=' ')){  
+            count++; 
+        }
+    }
+
+    System.out.println("\n Number of words in a sentece : " + count);   
+    } 
+}//end of class
+        </code></pre>
+       </div>
+    </div>
+        <div class="code-result">
+            <div class="look">
+                <div class="uiBtns">
+                    <div class="red btn"></div>
+                    <div class="orange btn"></div>
+                    <div class="green btn"></div>
+                </div>
+                <div class="window-header">
+                    <pre class="output">Output</pre>
+                </div>
+             </div>
+        <div class="snippet-container">
+       <pre class="code-snippet">
+❯ javac wordsCounter.java
+❯ java  wordsCounter
+
+   Enter a Sentence: Peace be upon You! 
+
+   Number of words in a sentence: 4
+   
+</pre>
+        </div>
+        </div>       
+    </div>
+    <div class="footer-container">
+        <footer> &copy; EASC-UNOFFICIAL</footer>
+    </div>
+</body>
+</html>

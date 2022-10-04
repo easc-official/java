@@ -1,0 +1,336 @@
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+} 
+ .exit-btn {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+ }
+.code-snippet 
+{
+    margin: 0;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px;
+    width: fit-content;
+    border-collapse: collapse;
+    border-radius: 0 0 15px 15px;
+}
+.look{
+    border: 1px solid grey;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(14, 13, 13);
+}
+.code-result {
+    height: fit-content;
+  }
+.header {
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+span {
+    letter-spacing: .1em;
+}
+.highlighted {
+    color: rgb(252, 5, 66);
+}
+.look {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    justify-content: space-between;
+}
+.uiBtns {
+    display: flex;
+    gap: 10px;
+}
+.window-header {
+    padding-right: 15px;
+}
+.btn {
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+}
+.orange {
+    background-color: rgb(253, 195, 86);
+    box-shadow: 0 0 2px rgb(253, 195, 86);
+}
+.green {
+    background-color: rgb(127, 253, 101);
+    box-shadow: 0 0 2px rgb(127, 253, 101);
+}
+.red {
+    background-color: rgb(250, 70, 70);
+    box-shadow: 0 0 2px rgb(250, 70, 70);
+}
+.code, .code-result {
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 2px 17px rgb(126, 125, 125);
+}
+.header-container, .footer-container {
+    background-color: rgb(197, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px white;
+}
+.upper {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+.header-container > h2 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.highlighted {
+    letter-spacing: 0.1em;
+}
+.header-container, .footer-container, .upper{
+    font-family: 'Raleway', cursive;
+}
+.header-container {
+    height: 45px;
+    position: sticky;
+    top: 0vh;
+    box-shadow: 0 10px 22px rgb(88, 88, 88);
+}
+.footer-container {
+    letter-spacing: 0.1em;
+    height: 40px;
+    box-shadow: 0 -5px 22px rgba(49, 49, 49, 0.7);
+}
+.snippet-container {
+    background-color:rgba(61, 61, 61, 0.50);
+}
+.code-snippet-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px 200px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.output-img {
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 400px;
+    height: auto;
+}
+
+.checkbox {
+ display: none;
+}
+
+.button {
+    position: fixed;
+    background-color: white;
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 2000;
+    text-align: center; 
+    cursor: pointer;
+  }
+  
+  .background {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 1000;
+    background-image: radial-gradient(rgb(207, 207, 207), black);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+.nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+}
+
+.list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    font-family: 'Baloo 2';
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.item {
+    margin: 0rem;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 15px 0 15px 0;
+}
+.upper2 {
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #352e57;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.4s;
+    text-shadow: 0 0 2px white,0 2px 4px black, 0 2px 15px white, 0 3px 20px white;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+    text-shadow: 0 0 2px white,0 0 4px black, 0 0 15px white, 0 0 25px gray;
+    cursor: pointer;
+    color: #fbfbfd;
+    transform: scale(1.3);
+}
+
+.checkbox:checked ~ .background {
+    transform: scale(150);
+    box-shadow: 0 1rem 3rem black;
+}
+.checkbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.icon,
+.icon::before,
+.icon::after {
+    width: 1rem;
+    height: 2px;
+    background-color: gray;
+    display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.icon::before {
+top: -0.3rem;
+}
+.icon::after {
+top: 0.3rem;
+}
+
+.button:hover icon:before {
+top: -1rem;
+}
+.button:hover icon::after {
+top: 1rem;
+}
+
+.checkbox:checked + .button .icon {
+background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+top: 0;
+transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+top: 0;
+transform: rotate(-135deg);
+
+}
+
+@media only screen and (max-width: 854px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .look {
+        margin: 0;
+        padding: 0;
+    }
+    .uiBtns {
+        padding-left: 12px;
+    }
+    .code-snippet-container {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        flex-wrap: nowrap;
+        align-items: unset;
+        gap: 30px;
+    }
+    .snippet-container {
+        overflow-x: scroll;
+    }
+    .code-snippet::-webkit-scrollbar {
+        width: 1px !important;
+    }
+    .code-snippet{
+        overflow: -moz-scrollbars-none;
+        width: 100%;
+    }
+    .footer-container, .header-container {
+        height: 45px;
+    }
+    .image {
+        width: unset;
+        height: unset;
+    }
+    .header-container {
+        justify-content: center;
+    }
+    .header-container > h2 {
+        font-size: 15px;
+    }
+    .header-container > .small {
+        font-size: 14px;
+    }
+}
+
+/* - --- - - - -- - - - - - - - - - - - - ---- - - - */

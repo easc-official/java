@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3</title>
+    <link rel="stylesheet" href="../css/fonts-imported.css">
+    <link rel="stylesheet" href="../css/programstyle.css">
+    <link rel="shortcut icon" href="../icons/icons8-source-code-64.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header-container">
+        <h2 class="opening header"><span class="upper">F</span>ibonacci &nbsp; &nbsp;<span class="highlighted"><span class="upper">S</span>eries</span></h2>
+    </div>
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+    <label for="navi-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+    </label>
+    <div class="background">&nbsp;</div>
+    <nav class="nav">
+        <ul class="list">
+            <li class="item"> <a class="link" id="exit"  href="../../index.html"><span class="upper2">H</span>ome</a></li>
+            <li class="item"> <a class="link" id="about" href="../about/about.html">&nbsp;<span class="upper2">A</span>bout</a> </li>
+        </ul>
+      </nav>
+
+    <div class="code-snippet-container">
+       <div class="code">
+         <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="program-name">Using Package</pre>
+            </div>
+         </div>  
+        <div class="snippet-container">
+        <pre class="code-snippet">
+import java.io.*;
+import easc.fib;
+import java.lang.*;
+import java.util.Scanner;
+
+public class main{
+
+    public static void main(String[] args)  
+    {
+    Scanner sc=new Scanner(System.in);
+
+    fib FIB = new fib();
+
+    System.out.print("Enter the value ");
+
+    int count=sc.nextInt();
+
+    FIB.fibonacii(count);
+   }
+}</pre>
+       </div>
+    </div>
+        <div class="code second">
+          <div class="look">
+             <div class="uiBtns">
+                 <div class="red btn"></div>
+                 <div class="orange btn"></div>
+                 <div class="green btn"></div>
+             </div>
+             <div class="window-header">
+                 <pre class="program-name">fib.java</pre>
+             </div>
+          </div>  
+         <div class="snippet-container">
+         <pre class="code-snippet">
+package easc;
+
+import java.io.*;
+import java.lang.*;
+public class fib{
+public void fibonacii(int num){   
+
+int n1=0,n2=1;
+int n3;
+System.out.println("\n"+"Fibonacii");
+System.out.println("\n"+"1.Iteration = "+n1);  
+System.out.println("2.Iteration = "+n2);
+for(int i=3;i<=num;i++)
+{
+n3=n1+n2;
+System.out.println(i+".Iteration = "+n3);
+n1=n2;
+n2=n3;
+
+}}} //end of class</pre>
+        </div>
+    </div>       
+    <div class="code-result">
+        <div class="look">
+            <div class="uiBtns">
+                <div class="red btn"></div>
+                <div class="orange btn"></div>
+                <div class="green btn"></div>
+            </div>
+            <div class="window-header">
+                <pre class="output">Output</pre>
+            </div>
+         </div>
+    <div class="snippet-container">
+   <pre class="code-snippet">
+❯ javac main.java
+❯ java main
+    Enter the value 3
+
+    Fibonacii
+
+    1.Iteration = 0
+    2.Iteration = 1
+    3.Iteration = 1 
+</pre>
+    </div>
+    </div>
+  </div> 
+    <div class="footer-container">
+        <footer> &copy; EASC-unofficial</footer>
+    </div>
+</body>
+</html>
