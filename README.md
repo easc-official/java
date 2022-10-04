@@ -5,14 +5,13 @@ Builted using HTML5, CSS3 and JS.
 
 <br>
 
->**TRY NOW..!** <br>
-> -
->>**[Web Application :](https://github.com/easc-unofficial/Java-Programming/)** <br>
+## **TRY NOW..!** <br>
+>>**[Web Application :](https://github.com/easc-unofficial/Java-Programming/ "Website Demo Link")** <br>
 >> - A Web Applicaton developed to **load our Website from Webserver**
 >> - Completely Online
 >> - Try it by clicking the above heading
 > ----
->>**[Android Application :](https://github.com/easc-unofficial/Java-Programming/assets)** <br>
+>>**[Android Application :](https://github.com/easc-unofficial/java/raw/main/assets/androidApplication/Java-Programming.apk "Direct Dowload Link")** <br>
 >> - An Android Application developed to **load our Website locally from assets**
 >> - Completely offline <br>
 >> - Try it by clicking the above heading
