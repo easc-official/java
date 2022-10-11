@@ -15,7 +15,7 @@ Builted using HTML5, CSS3 and JS.</p>
 
 - Optimized for WebBrowsers
 
-- Try the Demo, **[Website Link](https://github.com/easc-unofficial/java/)**
+- Try the Demo, **[Website Link](https://easc-unofficial.github.io/java/)**
 
 
 </details></div>
@@ -44,7 +44,7 @@ Builted using HTML5, CSS3 and JS.</p>
 * Record of 10 Programs are included.
 * Optimized UI & UX.
 * All Programs are verified & Ready to compile.
-* Comes with a __Homepage__ which navigates us to seperate __Program Pages__ for each programs.
+* Comes with a Homepage which navigates us to seperate Program Pages for each programs.
 
 <br>
 
